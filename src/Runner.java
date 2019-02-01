@@ -30,7 +30,7 @@ public class Runner {
     }
 
     //string2
-    public boolean bobThere(String str) {
+    public static boolean bobThere(String str) {
         char b = 'b';
         for (int i = 2; i < str.length(); i++) {
             if ((str.charAt(i) == b && str.charAt(i - 2) == b)) {
@@ -41,7 +41,7 @@ public class Runner {
     }
 
     //string3
-    public int countTriple(String str) {
+    public static int countTriple(String str) {
         int tripleCount = 0;
         for (int i = 0; i < str.length() - 2; i++){
             if (str.charAt(i) == str.charAt(i+1) && str.charAt(i) == str.charAt(i + 2)){
